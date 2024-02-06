@@ -10,6 +10,13 @@ export default {
     AppMain
   },
   created() {
+
+    // Ottenere la lista di tipi disponibili
+    // axios.get(typesEndpoint).then(res => {
+    //   store.availableTypes = res.data;
+    // });
+
+    // per ottenere la lista pokemon
     axios.get(endpoint).then(res => {
       store.listPokemon = res.data.docs;
     })
