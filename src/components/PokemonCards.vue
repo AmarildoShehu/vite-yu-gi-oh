@@ -34,12 +34,4 @@ img {
     width: 120px;
     height: 100px;
 }
-
-// h5::after {
-//     content: '';
-//     display: block;
-//     width: 30px;
-//     border: 1px solid;
-//     margin: 1rem auto;
-// }
 </style>

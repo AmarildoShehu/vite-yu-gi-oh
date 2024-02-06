@@ -1,6 +1,6 @@
 <script>
 import { store } from '../data/store.js'
-import PokemonCard from './pokemonCards.vue';
+import PokemonCard from './PokemonCards.vue';
 export default {
     name: 'AppMain',
     data: () => ({
@@ -14,10 +14,10 @@ export default {
 
 <template>
     <main>
-        <h1 class="text-white text-center">Pokedex</h1>
+
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col col-lg-2  m-1" v-for="pokemon in store.listPokemon">
+                <div class="col col-lg-2 m-1" v-for="pokemon in store.listPokemon">
                     <PokemonCard :pokemon="pokemon" />
                 </div>
             </div>
@@ -25,8 +25,11 @@ export default {
     </main>
 </template>
 
+
+
 <style lang="scss" scoped>
 main {
     background-color: #B71B1B;
 }
 </style>
+
